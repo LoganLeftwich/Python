@@ -1,0 +1,36 @@
+# LeftwichP1
+# Programmer: Logan Leftwich
+# Email: lleftwich1@student.cnm.edu
+# Purpose: Provide user with ability to perform calculations, such as calculating the volume of a square pyramid as well as the lateral surface area.
+
+# Greeting 
+print()
+print('Welcome to my wonderful calculator!')
+print('All it needs is the base and height of the square pyramid.')
+print('It will then calculate the volume and lateral surface area of the square pydramid.')
+print()
+
+# Input base
+base = float(input('Enter base: '))
+
+# Input height 
+height = float(input('Enter height: '))
+
+# Calculate volume
+volume = base**2*(height/3)
+
+# Calculate lateral suface area 
+from math import sqrt
+lsa = base*sqrt(base**2+4*height**2)
+
+# Display results 
+Rounded_volume = (round(volume, 2))
+Rounded_lsa = (round(lsa, 2))
+print()
+print(f'The volume is {Rounded_volume}')
+print(f'The lateral surface area is {Rounded_lsa}')
+print()
+
+# Goodbye
+print('I hope you enjoyed my awesome calculator!')
+print('Good Bye!')
